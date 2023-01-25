@@ -1,0 +1,91 @@
+section {
+    background: rgb(20, 21, 25);
+    height: 100%;
+    width: 100%;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
+  }
+  
+  h1 {
+    padding-top: 20px;
+    margin-top: 0;
+  }
+  
+  .rating-box {
+    max-width: 90%;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-image: radial-gradient(circle, #1a1f26 1%, #161d27 65%);
+    border-radius: 32px;
+    padding: 50px;
+    background-position-y: -90px;
+    background-repeat: no-repeat;
+    background-color: #161d27;
+  }
+  
+  .rating-output {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .rating-output li {
+    flex: 1 0 auto;
+    text-align: center;
+  }
+  
+  .rating-button {
+    text-decoration: none;
+    background-color: #262f38;
+    color: #747c87;
+    display: block;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    line-height: 30px;
+    margin: auto;
+  }
+  
+  input[name="rating"][value="1"] + ul.rating-output .rating-button[data-value="1"],
+  input[name="rating"][value="2"] + ul.rating-output .rating-button[data-value="2"],
+  input[name="rating"][value="3"] + ul.rating-output .rating-button[data-value="3"],
+  input[name="rating"][value="4"] + ul.rating-output .rating-button[data-value="4"],
+  input[name="rating"][value="5"] + ul.rating-output .rating-button[data-value="5"] {
+    background-color: #7b8797;
+    color: #fff;
+  }
+  
+  .rating-button:hover {
+    background-color: #fe7410 !important;
+    color: #fff;
+  }
+  
+  button[type="submit"] {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 28px;
+    border-radius: 12px;
+    background: #fe7410;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    color: #fe7410;
+    background: #fff;
+  }
