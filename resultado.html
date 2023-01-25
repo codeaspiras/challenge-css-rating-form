@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="./assets/css/styles.css" />
+    </head>
+    <body>
+        <section>
+            <div class="rating-box">
+                <h1>Thanks!</h1>
+                <p>You voted <span id="output"></span>!</p>
+            </div>
+        </section>
+        <script type="text/javascript">
+            const urlParams = new URLSearchParams(window.location.search);
+            const rating = urlParams.get('rating');
+            document.getElementById("output").innerText = rating;
+        </script>
+    </body>
+</html>
